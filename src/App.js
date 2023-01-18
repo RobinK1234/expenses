@@ -5,21 +5,16 @@ import NewExpense from "./components/NewExpense/NewExpense";
 
 
 const App = () => {
-    const expenses = [
-        {
-        date: new Date (2023, 1, 10),
-        title: 'New book',
-        price: 30.99
-    },
-    {
-        date: new Date (2023, 0, 5),
-        title: 'Icecream',
-        price: 3.99
+    const expenses = [...]
+
+    const addExpensehandler = (expense) => {
+        console.log('In App.js')
+        console.log(expense)
     }
-]
+
     return (
     <div className="App">
-        <NewExpense></NewExpense>
+        <NewExpense onAddExpense={addExpensehandler}></NewExpense>
         <Expenses expenses={expenses}></Expenses>
     </div>
   );
