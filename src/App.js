@@ -5,7 +5,18 @@ import NewExpense from "./components/NewExpense/NewExpense";
 
 
 const App = () => {
-    const expenses = [...]
+    const expenses = [
+        {
+            date: new Date(2023, 0, 10),
+            title:'New book',
+            price: 30.99
+        },
+        {
+            date: new Date(2023, 0, 5),
+            title:'Icecream',
+            price: 3.99
+        }
+    ]
 
     const addExpensehandler = (expense) => {
         console.log('In App.js')
